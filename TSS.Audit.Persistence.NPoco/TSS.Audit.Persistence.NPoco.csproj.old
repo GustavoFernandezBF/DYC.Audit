@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.Persistence.NPoco.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4413D224-34C5-4CCB-A1D0-3D5FF4DB1F2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.Persistence.NPoco</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TSS.Audit.Persistence.NPoco</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPoco">
+      <HintPath>lib\NPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>lib\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Persistence">
+      <HintPath>lib\TSS.Audit.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.QueryModel">
+      <HintPath>lib\TSS.Audit.QueryModel.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NPocoDataAccess.cs" />
+    <Compile Include="Mapping\AuditEntityMapping.cs" />
+    <Compile Include="Mapping\AuditEntityTableColumnMapping.cs" />
+    <Compile Include="Mapping\AuditEntityTableMapping.cs" />
+    <Compile Include="Mapping\AuditLogDataMapping.cs" />
+    <Compile Include="Mapping\AuditProcessDescriptionMapping.cs" />
+    <Compile Include="Abstract\NPocoDatabaseFactory.cs" />
+    <Compile Include="Abstract\PagedList.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPoco">
+      <HintPath>lib\NPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>lib\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSS.Audit.Persistence\TSS.Audit.Persistence.csproj" />
+    <ProjectReference Include="..\TSS.Audit.QueryModel\TSS.Audit.QueryModel.csproj" />
+  </ItemGroup>
+</Project>

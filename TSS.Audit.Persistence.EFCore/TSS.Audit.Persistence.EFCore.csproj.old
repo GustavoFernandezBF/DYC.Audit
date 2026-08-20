@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.Persistence.EFCore.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCE30108-8416-4248-B697-BE5DE1705B23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.Persistence.EFCore</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TSS.Audit.Persistence.EFCore</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore">
+      <HintPath>lib\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational">
+      <HintPath>lib\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer">
+      <HintPath>lib\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>lib\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>lib\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>lib\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>lib\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable" />
+    <Reference Include="System.Runtime">
+      <HintPath>lib\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>lib\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Common">
+      <HintPath>lib\TSS.Audit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Domain">
+      <HintPath>lib\TSS.Audit.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Persistence">
+      <HintPath>lib\TSS.Audit.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditDbContext.cs" />
+    <Compile Include="AuditUnitOfWork.cs" />
+    <Compile Include="EntityFrameworkAuditRepository.cs" />
+    <Compile Include="EntityFrameworkCoreRepository.cs" />
+    <Compile Include="1EntityFrameworkCoreRepository.cs" />
+    <Compile Include="Mapping\AuditEntityMapping.cs" />
+    <Compile Include="Mapping\AuditEntityTableColumnMapping.cs" />
+    <Compile Include="Mapping\AuditEntityTableMapping.cs" />
+    <Compile Include="Mapping\AuditProcessDescriptionMapping.cs" />
+    <Compile Include="Mapping\AuditProcessLogMapping.cs" />
+    <Compile Include="Mapping\AuditTransactionEntityLogMapping.cs" />
+    <Compile Include="Mapping\AuditTransactionEntityTableColumnLogMapping.cs" />
+    <Compile Include="Mapping\AuditTransactionEntityTableLogMapping.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

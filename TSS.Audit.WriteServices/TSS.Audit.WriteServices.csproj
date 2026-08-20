@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>lib\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>lib\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSS.Audit.Common\TSS.Audit.Common.csproj" />
+    <ProjectReference Include="..\TSS.Audit.DTOs\TSS.Audit.DTOs.csproj" />
+    <ProjectReference Include="..\TSS.Audit.Domain\TSS.Audit.Domain.csproj" />
+    <ProjectReference Include="..\TSS.Audit.Persistence\TSS.Audit.Persistence.csproj" />
+    <ProjectReference Include="..\TSS.Audit.Resources\TSS.Audit.Resources.csproj" />
+  </ItemGroup>
+</Project>

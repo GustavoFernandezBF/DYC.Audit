@@ -1,0 +1,19 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: TSS.Audit.ReadServices.Settings.ReadServiceSettings
+// Assembly: TSS.Audit.ReadServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: A10258C3-6446-4BF1-813B-45DC267811FE
+// Assembly location: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.ReadServices.dll
+
+using System.Collections.Generic;
+
+#nullable disable
+namespace TSS.Audit.ReadServices.Settings;
+
+public class ReadServiceSettings
+{
+  public int? MaxAuditLogRowsQuantityToExport { get; set; } = new int?(3000);
+
+  public string ExternalApplicationAuditRoleCode { get; set; }
+
+  public Dictionary<string, TSS.Audit.ReadServices.Settings.AuditLogFieldNameEquivalence> AuditLogFieldNameEquivalence { get; set; } = new Dictionary<string, TSS.Audit.ReadServices.Settings.AuditLogFieldNameEquivalence>();
+}

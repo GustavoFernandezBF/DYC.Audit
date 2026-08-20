@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.DTOs.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF11264D-9909-4258-BDCD-E899F0F602EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.DTOs</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TSS.Audit.DTOs</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Common">
+      <HintPath>lib\TSS.Audit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Response\PaginatedResponse.cs" />
+    <Compile Include="Response\AuditColumnLogResponse.cs" />
+    <Compile Include="Response\AuditEntityLogResponse.cs" />
+    <Compile Include="Response\AuditLogDataExport.cs" />
+    <Compile Include="Response\AuditLogResponse.cs" />
+    <Compile Include="Response\AuditTableLogResponse.cs" />
+    <Compile Include="Response\AuditTableLogSnapshotResponse.cs" />
+    <Compile Include="Response\AuditTableSnapshotResponse.cs" />
+    <Compile Include="Response\OperationBuilder.cs" />
+    <Compile Include="Response\OperationResponse.cs" />
+    <Compile Include="Response\TableOperation.cs" />
+    <Compile Include="Request\AuditEntityDelete.cs" />
+    <Compile Include="Request\AuditLogSearch.cs" />
+    <Compile Include="Request\AuditProcessDelete.cs" />
+    <Compile Include="Request\AuditTableLogSnapshotRequest.cs" />
+    <Compile Include="Core\AuditApp.cs" />
+    <Compile Include="Core\AuditColumnLog.cs" />
+    <Compile Include="Core\AuditColumnSnapshot.cs" />
+    <Compile Include="Core\AuditEntity.cs" />
+    <Compile Include="Core\AuditEntityLog.cs" />
+    <Compile Include="Core\AuditFieldSearch.cs" />
+    <Compile Include="Core\AuditLog.cs" />
+    <Compile Include="Core\AuditProcess.cs" />
+    <Compile Include="Core\AuditTable.cs" />
+    <Compile Include="Core\AuditTableColumn.cs" />
+    <Compile Include="Core\AuditTableLog.cs" />
+    <Compile Include="Core\AuditTableSnapshot.cs" />
+    <Compile Include="Core\OperationStatus.cs" />
+    <Compile Include="Core\SortDescriptor.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

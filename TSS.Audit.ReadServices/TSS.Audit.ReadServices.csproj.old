@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.ReadServices.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8914CB31-FAD2-4F04-96A5-BD2CB5D72712}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.ReadServices</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TSS.Audit.ReadServices</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Common">
+      <HintPath>lib\TSS.Audit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.DTOs">
+      <HintPath>lib\TSS.Audit.DTOs.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.ExternalServicesClients.Abstractions">
+      <HintPath>lib\TSS.Audit.ExternalServicesClients.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Mapping">
+      <HintPath>lib\TSS.Audit.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Persistence">
+      <HintPath>lib\TSS.Audit.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.QueryModel">
+      <HintPath>lib\TSS.Audit.QueryModel.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Resources">
+      <HintPath>lib\TSS.Audit.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping">
+      <HintPath>lib\TSS.Core.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditApplicationReadService.cs" />
+    <Compile Include="AuditEntityReadService.cs" />
+    <Compile Include="AuditLogReadService.cs" />
+    <Compile Include="AuditProcessDescriptionReadService.cs" />
+    <Compile Include="ReadOperationResponse.cs" />
+    <Compile Include="ReadOperationResponse`1.cs" />
+    <Compile Include="ReadOperationBuilder.cs" />
+    <Compile Include="Settings\AuditLogFieldNameEquivalence.cs" />
+    <Compile Include="Settings\ReadServiceSettings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

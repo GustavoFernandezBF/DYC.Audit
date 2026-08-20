@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IdentityModel">
+      <HintPath>lib\IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSS.Audit.ExternalServicesClients.Abstractions\TSS.Audit.ExternalServicesClients.Abstractions.csproj" />
+    <ProjectReference Include="..\TSS.Audit.Resources\TSS.Audit.Resources.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExpressMapper">
+      <HintPath>lib\ExpressMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping">
+      <HintPath>lib\TSS.Core.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping.ExpressMapper">
+      <HintPath>lib\TSS.Core.Mapping.ExpressMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSS.Audit.Common\TSS.Audit.Common.csproj" />
+    <ProjectReference Include="..\TSS.Audit.DTOs\TSS.Audit.DTOs.csproj" />
+    <ProjectReference Include="..\TSS.Audit.ExternalServicesClients.Abstractions\TSS.Audit.ExternalServicesClients.Abstractions.csproj" />
+    <ProjectReference Include="..\TSS.Audit.Mapping\TSS.Audit.Mapping.csproj" />
+    <ProjectReference Include="..\TSS.Audit.QueryModel\TSS.Audit.QueryModel.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TSS.Core.Mapping">
+      <HintPath>lib\TSS.Core.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping.ExpressMapper">
+      <HintPath>lib\TSS.Core.Mapping.ExpressMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

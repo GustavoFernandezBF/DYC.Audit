@@ -1,0 +1,49 @@
+## Visual Studio & .NET .gitignore
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][In][32]/
+[Bb]in/
+[Oo]bj/
+[Lg]og/
+[Lg]ogs/
+publish/
+out/
+
+# Visual Studio & IDE cache directories
+.vs/
+.idea/
+.vscode/
+*.DotSettings.user
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuspec.result
+
+# Log files & Test Results
+*.log
+[Tt]est[Rr]esult*/
+[Bb]uild[Lg]og.*
+
+# Publish profiles user settings
+Properties/PublishProfiles/*.pubxml.user

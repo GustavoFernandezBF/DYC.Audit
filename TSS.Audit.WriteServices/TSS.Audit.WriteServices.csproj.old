@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.WriteServices.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4CBCC53F-A702-4174-9829-5BE4BF8306F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.WriteServices</AssemblyName>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <RootNamespace>TSS.Audit.WriteServices</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>lib\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>lib\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Common">
+      <HintPath>lib\TSS.Audit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.DTOs">
+      <HintPath>lib\TSS.Audit.DTOs.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Domain">
+      <HintPath>lib\TSS.Audit.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Persistence">
+      <HintPath>lib\TSS.Audit.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Resources">
+      <HintPath>lib\TSS.Audit.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Persistence">
+      <HintPath>lib\TSS.Core.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditEntityWriteService.cs" />
+    <Compile Include="AuditLogWriteService.cs" />
+    <Compile Include="AuditProcessDescriptionWriteService.cs" />
+    <Compile Include="WriteOperationResponse.cs" />
+    <Compile Include="WriteOperationBuilder.cs" />
+    <Compile Include="Validation\AutofacValidatorProvider.cs" />
+    <Compile Include="Validation\FluentValidationService.cs" />
+    <Compile Include="Validation\IValidationService.cs" />
+    <Compile Include="Validation\IValidatorProvider.cs" />
+    <Compile Include="Validation\Validators\AuditColumnLogValidator.cs" />
+    <Compile Include="Validation\Validators\AuditEntityDeleteValidator.cs" />
+    <Compile Include="Validation\Validators\AuditEntityLogValidator.cs" />
+    <Compile Include="Validation\Validators\AuditEntityValidator.cs" />
+    <Compile Include="Validation\Validators\AuditLogValidator.cs" />
+    <Compile Include="Validation\Validators\AuditProcessDeleteValidator.cs" />
+    <Compile Include="Validation\Validators\AuditProcessValidator.cs" />
+    <Compile Include="Validation\Validators\AuditTableColumnValidator.cs" />
+    <Compile Include="Validation\Validators\AuditTableLogValidator.cs" />
+    <Compile Include="Validation\Validators\AuditTableValidator.cs" />
+    <Compile Include="Settings\WriteServiceSettings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

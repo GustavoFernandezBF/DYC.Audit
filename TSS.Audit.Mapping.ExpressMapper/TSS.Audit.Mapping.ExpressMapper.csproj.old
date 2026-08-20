@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Baufest\GIT\TSS.Audit.WebApi\TSS.Audit.Mapping.ExpressMapper.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC11FD47-0721-4221-8EAA-ACA4D9AF4DF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TSS.Audit.Mapping.ExpressMapper</AssemblyName>
+    <ApplicationVersion>1.2.1.22</ApplicationVersion>
+    <RootNamespace>TSS.Audit.Mapping.ExpressMapper</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExpressMapper">
+      <HintPath>lib\ExpressMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Common">
+      <HintPath>lib\TSS.Audit.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.DTOs">
+      <HintPath>lib\TSS.Audit.DTOs.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.ExternalServicesClients.Abstractions">
+      <HintPath>lib\TSS.Audit.ExternalServicesClients.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.Mapping">
+      <HintPath>lib\TSS.Audit.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Audit.QueryModel">
+      <HintPath>lib\TSS.Audit.QueryModel.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping">
+      <HintPath>lib\TSS.Core.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="TSS.Core.Mapping.ExpressMapper">
+      <HintPath>lib\TSS.Core.Mapping.ExpressMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditMapper.cs" />
+    <Compile Include="Mapping\ExternalSecurityContractsToDtoMapperConfig.cs" />
+    <Compile Include="Mapping\QueryModelToDtoMapperConfig.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
